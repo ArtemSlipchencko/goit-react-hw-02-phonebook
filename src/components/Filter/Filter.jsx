@@ -1,7 +1,13 @@
 import React, { Component } from 'react';
 import './Filter.css';
+import PropTypes from 'prop-types';
 
 class Filter extends Component { 
+
+  static propTypes = {
+    filter: PropTypes.string.isRequired,
+    handleFilter: PropTypes.func.isRequired,
+  };
   
   render () {
 

@@ -1,7 +1,13 @@
 import React, { Component } from 'react';
 import './Contacts.css';
+import PropTypes from 'prop-types';
 
 class Contacts extends Component {
+
+    static propTypes = {
+        contacts: PropTypes.arrayOf(PropTypes.object).isRequired,
+        deleteContact: PropTypes.func.isRequired,
+      };
 
     render() {
         
