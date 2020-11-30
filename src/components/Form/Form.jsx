@@ -9,23 +9,12 @@ class Form extends Component {
         number: ""
     };
 
-    handleChange = (e) => {
+    handleChange = ({target}) => {
+        
+        const {name, value} = target;
 
-        if (e.target.name === "name") {
-            this.setState(prevState => {
-            
-                return {name: e.target.value}
-    
-            })
-        } 
-
-        if (e.target.name === "number") {
-            this.setState(prevState => {
-            
-                return {number: e.target.value}
-    
-            })
-        } 
+        this.setState( {[name]: value} );
+         
     };
             
     handlerSubmit = (e) => {

@@ -14,7 +14,6 @@ class Contacts extends Component {
         const {contacts, deleteContact} = this.props;
         
         return (
-        <>
             <ul>
 
                 {
@@ -26,7 +25,6 @@ class Contacts extends Component {
                 }
 
             </ul>
-        </>
     )}
 
 };
